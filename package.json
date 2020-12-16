@@ -1,0 +1,36 @@
+{
+  "name": "telegram-wrapper",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": {
+    "email": "gil4260@korea.ac.kr",
+    "name": "distrue",
+    "url": "https://distrue.github.io"
+  },
+  "keywords": [
+    "telegram",
+    "chatbot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/distrue/chat2u-telegrambot2u.git"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc ./lib/index.ts --declaration -outDir ./dist",
+    "test": "jest",
+    "deploy": "npm run build && npm publish"
+  },
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "axios": "^0.21.0"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
